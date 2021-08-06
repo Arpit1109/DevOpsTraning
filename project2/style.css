@@ -1,0 +1,265 @@
+   
+ *{
+    font-family: 'Courgette', cursive;
+     margin: 0px;
+     padding: 0px;
+ }  
+ html{
+     scroll-behavior: smooth;
+ }  
+    
+   /* navigation bar */
+#navbar{
+    display: flex;
+   align-items: center;
+    position: sticky;
+    top: 0px;
+    
+    
+}
+#navbar ::before{
+    content: "";
+    top: 0px;
+    left: 0px;
+    width:100%;
+    height: 100%;
+    position: absolute;
+    background: black;
+    z-index: -1;
+    opacity: 0.06;
+     
+}
+#logo{
+     margin:10px 34px;
+}
+#logo img{
+    
+    height: 60px;
+    width: 60px;
+    margin: 3px 6px;
+  border-radius: 100px;
+    
+}
+#navbar ul{
+    display: flex;
+    
+}
+#navbar ul li{
+   list-style: none;
+   font-size: 1.3rem;
+  
+}
+#navbar ul li a{
+    
+  
+    display: block;
+    padding: 3px 22px;
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+
+}
+#navbar ul li a:hover{
+    background-color: white;
+     color: black;
+}
+
+
+/* home */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    margin: 3px 200px;
+    height: 550px;
+    
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: url('../img/home.jpg') no-repeat center center/cover;
+    height: 642px;
+    width: 120%;
+    z-index: -1;
+    opacity: 0.89;
+}
+#home h1{
+    text-align: center;
+    color: rgb(56, 54, 54);
+
+}
+#home p{
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 3px 141px;
+    padding: 15px;
+}
+ 
+ 
+/* services */
+
+/* #services-container{
+    position: absolute;
+    top: 750px;
+} */
+#services{
+    z-index: -1;
+    display: flex;
+   margin: 34px;
+}
+
+#services .box{
+    border: 2px solid black;
+   padding: 34px;
+   margin: 2px 55px;
+   border-radius: 30px;
+   margin-bottom: 24px;
+}
+#services #box1{
+    z-index: -1;
+    background: url('../img/s2.jpg') no-repeat center center/cover;
+}
+#services #box1 h2{
+    color: white;
+}
+#services #box1 p{
+    color:white;
+    font-size: 1.5rem;
+}
+#services #box2{
+    z-index: -1;
+    background:url('../img/bg2.jpg') no-repeat center center/cover ;
+    
+}
+#services #box2 p{
+    color: black;
+    font-size: 1.5rem;
+    
+}
+
+#services #box3{
+    z-index: -1;
+    background-image: url('../img/delivery.jpg');.
+}
+#services #box3 h2{
+color:white;
+
+
+}
+#services #box3 p{
+    color: white;
+font-size: 1.5rem;
+}
+
+/* client-section */
+/* #client-section{
+    position: relative;
+    top: 700px;
+    z-index: -1;
+    
+} */
+#client-section::before{
+    content: "";
+    position: absolute;
+    background-image: white;
+    
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+opacity: 0.8;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients .client-item{
+    padding: 34px;
+}
+/* contact */
+/* #contact{
+    position: relative;
+    top: 700px;
+} */
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url('../img/contact.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+}
+/* #contact-box form button{
+    margin-left: 200px;
+    
+} */
+footer{
+ position: relative;
+    top: 70px;
+    background: black;
+    color: white;
+    padding: 9px 20px;
+    
+}
+
+
+/* utility class */
+.h-secondary{
+    font-size: 2.5rem;
+    padding: 12px;
+
+}
+
+
+
+
+.h-primary{
+    font-size: 4rem;
+    padding: 12px;
+    
+}
+
+
+.btn{
+    margin: 10px;
+    padding: 6px 20px;
+    font-size: 2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.btn:hover{
+    background: black;
+    color: white;
+    
+}
+
+
+.center{
+    text-align: center;
+    
+}
